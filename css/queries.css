@@ -1,0 +1,47 @@
+/*************************************/
+/*  BELOW 608px (Tablets and Phones) */
+/**************************************/
+
+@media (max-width: 38em) {
+  html {
+    font-size: 50%;
+  }
+
+  .container {
+    padding: 0 4.2rem;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hamburger-button {
+    display: block;
+  }
+
+  .project {
+    flex-direction: column;
+    padding: 2.4rem 5.2rem;
+  }
+
+  .project__heading {
+    margin-bottom: 1.6rem;
+  }
+  .project__img {
+    height: 14rem;
+  }
+  .posts {
+    flex-direction: column;
+    grid-template-columns: auto;
+  }
+  .post__img-container {
+    height: 25rem;
+  }
+
+  .footer-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+  }
+}

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SkillWill</title>
+
+    <!-- Font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/queries.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-wrapper container">
+        <h1 class="header__logo">SkillWill Blog</h1>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">Newsletter</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#">Twitter</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="hamburger-button">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="section-projects container">
+        <h2 class="section-heading">
+          Recent <span class="text-blue">Projects</span>
+        </h2>
+        <div class="projects">
+          <!-- Project 1 -->
+          <div class="project">
+            <div class="project__img-container">
+              <img
+                class="project__img"
+                src="/img/project-1.png"
+                alt="lightbulb"
+              />
+            </div>
+            <div class="project__content-container">
+              <h3 class="project__heading">Project 1</h3>
+              <p class="project__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                tenetur. Ullam, enim. Unde, officia assumenda. Quo, corporis ea
+                magnam quibusdam libero eligendi culpa minus non ullam iste,
+                necessitatibus id laudantium!
+              </p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="project">
+            <div class="project__img-container">
+              <img
+                class="project__img"
+                src="/img/project-2.png"
+                alt="arrow down"
+              />
+            </div>
+            <div class="project__content-container">
+              <h3 class="project__heading">Project 2</h3>
+              <p class="project__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                tenetur. Ullam, enim. Unde, officia assumenda. Quo, corporis ea
+                magnam quibusdam libero eligendi culpa minus non ullam iste,
+                necessitatibus id laudantium!
+              </p>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="project">
+            <div class="project__img-container">
+              <img class="project__img" src="/img/project-3.png" alt="trophy" />
+            </div>
+            <div class="project__content-container">
+              <h3 class="project__heading">Project 3</h3>
+              <p class="project__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab,
+                tenetur. Ullam, enim. Unde, officia assumenda. Quo, corporis ea
+                magnam quibusdam libero eligendi culpa minus non ullam iste,
+                necessitatibus id laudantium!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-posts container">
+        <h2 class="section-heading">
+          Latest <span class="text-blue">Posts</span>
+        </h2>
+        <div class="posts">
+          <!-- post 1 -->
+          <div class="post">
+            <div class="post__img-container">
+              <img class="post__img" src="./img/post-1.jpg" alt="laptop" />
+            </div>
+            <div class="post__content-container">
+              <h3 class="post__heading">Lorem ipsum dolor</h3>
+              <p class="post__date">April 24, 2022 - 5 min read</p>
+              <p class="post__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aperiam impedit animi labore a libero. Ipsum quod ex quis eius
+                sequi dolores vel velit, quo beatae nam fugit veritatis odio
+                itaque.
+              </p>
+            </div>
+          </div>
+          <!-- post 2 -->
+          <div class="post">
+            <div class="post__img-container">
+              <img class="post__img" src="./img/post-2.jpeg" alt="lightbulb" />
+            </div>
+            <div class="post__content-container">
+              <h3 class="post__heading">Lorem ipsum dolor</h3>
+              <p class="post__date">April 03, 2022 - 4 min read</p>
+              <p class="post__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aperiam impedit animi labore a libero. Ipsum quod ex quis eius
+                sequi dolores vel velit, quo beatae nam fugit veritatis odio
+                itaque.
+              </p>
+            </div>
+          </div>
+          <!-- post 3 -->
+          <div class="post">
+            <div class="post__img-container">
+              <img class="post__img" src="./img/post-3.jpeg" alt="white" />
+            </div>
+            <div class="post__content-container">
+              <h3 class="post__heading">Lorem ipsum dolor</h3>
+              <p class="post__date">March 12, 2022 - 6 min read</p>
+              <p class="post__content">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Aperiam impedit animi labore a libero. Ipsum quod ex quis eius
+                sequi dolores vel velit, quo beatae nam fugit veritatis odio
+                itaque.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="copyright">&copy; Copyright 2022 All rights reserved</div>
+
+        <div class="footer__icons">
+          <ul class="footer__icons-list">
+            <li>
+              <a class="facebook-link" href="#"
+                ><i class="fa-brands fa-facebook-f"></i
+              ></a>
+            </li>
+            <li>
+              <a class="twitter-link" href="#"
+                ><i class="fa-brands fa-twitter"></i
+              ></a>
+            </li>
+            <li>
+              <a class="linkedin-link" href="#"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

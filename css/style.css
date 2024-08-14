@@ -1,0 +1,245 @@
+:root {
+  --color-primary: #15b7f2;
+  --bg-col--primary: #0f172a;
+  --bg-col--secondary: #151e31;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--bg-col--primary);
+  color: #fff;
+  font-family: sans-serif;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+/* helper classes */
+.text-blue {
+  color: var(--color-primary);
+}
+
+.container {
+  max-width: 100rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
+}
+
+/********************/
+/* Reusable Elements */
+/********************/
+.section-heading {
+  font-size: 3.2rem;
+  margin-bottom: 2.4rem;
+}
+
+/***********/
+/*  HEADER */
+/***********/
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--bg-col--primary);
+}
+
+.header-wrapper {
+  display: flex;
+  height: 9.2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__logo {
+  color: var(--color-primary);
+  font-size: 3.8rem;
+  cursor: pointer;
+}
+.nav__list {
+  color: #fff;
+  font-size: 1.8rem;
+  display: flex;
+  list-style: none;
+  gap: 3.2rem;
+}
+.nav__link:link,
+.nav__link:visited {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.nav__link:hover,
+.nav__link:active {
+  color: var(--color-primary);
+}
+
+.hamburger-button {
+  display: none;
+  color: #fff;
+  font-size: 4.2rem;
+  background-color: transparent;
+  border: none;
+}
+
+/********************/
+/* Projects Section */
+/********************/
+.section-projects {
+  margin-top: 12rem;
+  margin-bottom: 12rem;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+}
+
+.project {
+  background-color: var(--bg-col--secondary);
+  display: flex;
+  gap: 3.2rem;
+  align-items: center;
+  border-radius: 1.4rem;
+  overflow: hidden;
+  padding: 1.8rem 2.8rem 1.8rem 1.8rem;
+  /* height: 16rem; */
+}
+.project__img-container {
+  height: 100%;
+}
+
+.project__img {
+  height: 16rem;
+  width: auto;
+  object-fit: contain;
+}
+
+.project__heading {
+  font-size: 2.4rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 1.4rem;
+}
+.project__content {
+  max-width: 78rem;
+  font-size: 1.6rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/*****************/
+/* Posts Section */
+/*****************/
+.section-heading {
+  margin-top: 8rem;
+  margin-bottom: 6rem;
+}
+.posts {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2.8rem;
+}
+.post {
+  background-color: var(--bg-col--secondary);
+  border-radius: 1.4rem;
+  overflow: hidden;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.post__img-container {
+  height: 15rem;
+  max-width: 100%;
+}
+.post__img {
+  margin-bottom: 1.8rem;
+  width: auto;
+  max-height: 100%;
+  object-fit: cover;
+}
+.post__heading {
+  font-size: 1.8rem;
+  margin: 1.2rem;
+}
+.post__date {
+  font-size: 1.2rem;
+  margin: 1.2rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.post__content {
+  font-size: 1.4rem;
+  padding: 1.8rem;
+  color: rgba(255, 255, 255, 0.863);
+}
+
+.post__img {
+  width: 100%;
+  height: auto;
+}
+.project__img-container {
+  flex-shrink: 0;
+  width: 20rem;
+  height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/**********************/
+/*   Footer Section   */
+/**********************/
+
+.footer {
+  border-top: 0.1rem solid rgb(255, 255, 255);
+  margin-top: 10rem;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+  margin-top: 1rem;
+}
+
+.copyright {
+  font-size: 1.4rem;
+}
+
+.footer__icons {
+  display: flex;
+  gap: 1.4rem;
+}
+.footer__icons-list {
+  display: flex;
+  list-style: none;
+  gap: 1.4rem;
+  font-size: 2.2rem;
+  justify-content: flex-end;
+  margin-bottom: 2rem;
+  margin-right: 11rem;
+}
+.facebook-link:link,
+.facebook-link:visited,
+.twitter-link:link,
+.twitter-link:visited,
+.linkedin-link:link,
+.linkedin-link:visited {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+.facebook-link:hover,
+.facebook-link:active,
+.twitter-link:hover,
+.twitter-link:active,
+.linkedin-link:hover,
+.linkedin-link:active {
+  color: var(--color-primary);
+}
